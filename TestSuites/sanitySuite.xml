@@ -1,0 +1,16 @@
+<suite name="Basic Sanity Tests" parallel="false" preserve-order="true">
+    <listeners>
+        <listener class-name="listeners.RetryTransformer"/>
+        <listener class-name="listeners.ExtentListener"/>
+    </listeners>
+    <test name="Your Store Home Page Test - Chrome" verbose="10">
+        <classes>
+            <class name="tests.HomePageTests"/>
+        </classes>
+    </test>
+    <test name="Your Store Login Page Test - Chrome" verbose="10">
+        <classes>
+            <class name="tests.LoginPageTests"/>
+        </classes>
+    </test>
+</suite>
